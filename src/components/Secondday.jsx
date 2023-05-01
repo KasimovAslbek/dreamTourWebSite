@@ -129,8 +129,9 @@ export default function Secondday () {
                           className="mySwiper "
                         >
                           {data.map(d=> (
-                            <div className=' relative  ' >
+                            
                             <SwiperSlide  >
+                            <div className=' relative  w-fit' >
                             <img className='w-64 sm:w-72 m:w-80 lg:w-[335px]  xl:w-72 2xl:w-80 h-64 sm:h-72 md:h-80 lg:h-64 xl:h-72 2xl:h-80' src={d.img} />
                             <div className='font-lato text-white text-sm absolute bottom-5 left-5 p-2 z-30'>
                                 <a href="" className='font-bold mb-1'>{d.title}</a>
@@ -138,9 +139,10 @@ export default function Secondday () {
                             </div>
 
                             <img className='absolute w-fit h-fit bottom-0 left-0 ' src="/img/day-black.png" alt="" />
-                          </SwiperSlide>
+                           </div>
+                           </SwiperSlide>
                             
-                            </div>
+                           
                           ))}
 
                         </Swiper>

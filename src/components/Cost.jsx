@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Cost() {
   return (
-    <div className='max-w-[1440px] mx-auto font-lato '>
+    <div className=' max-w-[1440px] mx-auto font-lato '>
         <div className='lg:flex gap-20 2xl:gap-36'>
             <div className='px-4 sm:px-8 2xl:pl-24 mt-12 sm:mt-16 lg:mt-20 2xl:mt-32 lg:w-2/3'>
             <h2 className='font-inter text-[#121212] text-3xl sm:text-5xl xl:text-7xl font-bold'>Стоимость участия</h2>

@@ -10,7 +10,8 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <React.StrictMode>
+    <div className='overflow-x-hidden'>
+          <React.StrictMode >
         <Topbar />
         <Kamchatka />
         < Day1 />
@@ -19,6 +20,8 @@ function App() {
         < Team />
         < Footer />
     </React.StrictMode>
+    </div>
+
   );
 }
 

@@ -53,11 +53,11 @@ const data = [
 export default function Firstday() {
     const lists = '/img/lists.png';
   return (
-    <div style={{ backgroundImage: `url(${lists})` }} className=' h-[1032px] sm:h-[950px] md:h-[1032px] lg:h-[932px]   bg-no-repeat bg-cover bg-center relative'>
+    <div style={{ backgroundImage: `url(${lists})` }} className=' h-[1032px] sm:h-[950px] md:h-[1032px] lg:h-[932px]   bg-no-repeat bg-cover bg-center relative '>
         <img className='absolute pl-10 pt-12 hidden xl:block z-30' src="img/point.png" alt="" />
-        <img className='w-full h-full absolute' src="/img/black-lists.png" alt="" />
-        <div className='ml-4  sm:ml-10 lg:ml-14 xl:ml-[5%] w-full absolute  z-30 lg:flex '>
-            <div className='text-white lg:w-1/2 xl:pb-28 2xl:pb-40 mr-4 sm:mr-0'>
+        <img className='w-full h-full absolute ' src="/img/black-lists.png" alt="" />
+        <div className='ml-4  sm:ml-10 lg:ml-14 xl:ml-[5%] z-30  lg:flex '>
+            <div className='text-white lg:w-1/2 xl:pb-28 2xl:pb-40 mr-4 sm:mr-0 relative z-30'>
                 <h2 className='font-bold font-montserrat text-2xl sm:text-4xl xl:text-5xl mb-4 sm:mb-12'><span className='text-[#F47648]'>День 1. </span>Прибытие. Встреча в аэропорту и размещение</h2>
                 <div className='text-[#ACACAC] sm:w-4/5 mr-4 sm:mr-0'>
                     <p>С высоты птичьего полета вы увидите знаменитые «домашние»  вулканы – Корякский, Авачинский и Козельский. У выхода в аэропорту <span className='font-semibold text-white'>вас встретят с табличкой «ДРИМ ТУР».</span></p>
@@ -66,7 +66,7 @@ export default function Firstday() {
                     <p><span className='font-semibold text-white'>Вечером</span>, после прибытия на Камчатку всех участников (если рейсы разные),  <span className='font-semibold text-white'>общая встреча</span>, проверка снаряжения,  обсуждение программы завтрашнего дня.</p>
                 </div>
             </div>
-            <div className='lg:w-1/2 lg:mt-auto mt-4 sm:mt-12'>
+            <div className='lg:w-1/2 lg:mt-auto mt-4 sm:mt-12 z-30'>
             <Swiper
                           navigation={{
                             prevEl: ".swiper-button-prev",
@@ -123,22 +123,25 @@ export default function Firstday() {
                           className="mySwiper "
                         >
                           {data.map(d=> (
-                            <div className=' relative  ' >
+                          
                             <SwiperSlide  >
-                            <img className='w-64 sm:w-72 m:w-80 lg:w-[335px]  xl:w-72 2xl:w-80 h-64 sm:h-72 md:h-80 lg:h-64 xl:h-72 2xl:h-80' src={d.img} />
-                            <div className='font-lato text-white text-sm absolute bottom-5 left-5 p-2 z-30'>
-                                <a href="" className='font-bold mb-1'>{d.title}</a>
-                                <p className='text-sm text-[#BDBDBD]'>{d.desc}</p>
-                            </div>
+                            <div className='relative w-fit'>
+                              <img className='w-64 sm:w-72 m:w-80 lg:w-[335px]  xl:w-72 2xl:w-80 h-64 sm:h-72 md:h-80 lg:h-64 xl:h-72 2xl:h-80' src={d.img} />
+                              <div className='font-lato text-white text-sm absolute bottom-5 left-5 p-2 z-30'>
+                                  <a href="" className='font-bold mb-1'>{d.title}</a>
+                                  <p className='text-sm text-[#BDBDBD]'>{d.desc}</p>
+                              </div>
 
                             <img className='absolute w-fit h-fit bottom-0 left-0 ' src="/img/day-black.png" alt="" />
+                            </div>
+                            
                           </SwiperSlide>
                             
-                            </div>
+                      
                           ))}
 
                         </Swiper>
-                        <div className='flex gap-4 mt-8'>
+                        <div className='flex gap-4 mt-8 relative z-40'>
                           <button className="swiper-button-prev rounded-full border border-white w-10 h-10 flex justify-center items-center"><img src="./img/left-mini.png" alt="" /></button>
                           <button className="swiper-button-next rounded-full border border-white w-10 h-10 flex justify-center items-center"><img src="./img/right-mini.png" alt="" /></button>
                         </div>

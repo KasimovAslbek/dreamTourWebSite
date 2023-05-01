@@ -4,7 +4,7 @@ export default function Application() {
   const rock = '/img/form-bg.png';
   return (
     <div>
-      <div className='max-w-[1440px] mx-auto font-lato mt-10 sm:mt-16  lg:mt-24 px-4 sm:px-8 2xl:pl-24 lg:flex relative z-40'>
+      <div className=' max-w-[1440px] mx-auto font-lato mt-10 sm:mt-16  lg:mt-24 px-4 sm:px-8 2xl:pl-24 lg:flex relative z-40'>
         <div className='lg:w-1/2 mb-10 lg:mb-0 text-[#212121] text-4xl font-bold space-y-7 flex items-center justify-between lg:block'>
             <h2>Онлайн-заявка</h2>
             <div className='hidden sm:flex gap-7'>

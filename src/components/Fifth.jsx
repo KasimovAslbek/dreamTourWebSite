@@ -113,18 +113,20 @@ export default function Fifth() {
                           className="mySwiper !z-40"
                         >
                           {data.map(d=> (
-                            <div className=' relative  ' >
+                            
                             <SwiperSlide  >
-                            <img className='w-64 sm:w-72 m:w-80 lg:w-[335px]  xl:w-72 2xl:w-80 h-64 sm:h-72 md:h-80 lg:h-64 xl:h-72 2xl:h-80' src={d.img} />
+                            <div className=' relative w-fit' >
+                              <img className='w-64 sm:w-72 m:w-80 lg:w-[335px]  xl:w-72 2xl:w-80 h-64 sm:h-72 md:h-80 lg:h-64 xl:h-72 2xl:h-80' src={d.img} />
                             <div className='font-lato text-white text-sm absolute bottom-5 left-5 p-2 z-30'>
                                 <a href="" className='font-bold mb-1'>{d.title}</a>
                                 <p className='text-sm text-[#BDBDBD]'>{d.desc}</p>
                             </div>
 
                             <img className='absolute w-fit h-fit bottom-0 left-0 ' src="/img/day-black.png" alt="" />
+                          </div>
                           </SwiperSlide>
                             
-                            </div>
+                            
                           ))}
 
                         </Swiper>
@@ -154,7 +156,7 @@ export default function Fifth() {
         </div>
         <div className='mt-8 sm:mt-20 lg:mt-40 xl:mt-52'>
         <img className='absolute pl-10 pt-1 hidden xl:block z-30' src="img/point.png" alt="" />
-        <div className='ml-4   sm:ml-10 lg:ml-14 xl:ml-[5%] w-full   z-20 lg:flex '>
+        <div className='ml-4   sm:ml-10 lg:ml-14 xl:ml-[5%]    z-20 lg:flex '>
             <div className='text-white xl:pl-8 lg:w-1/2 lg:pb-8 xl:pb-16  mr-4 sm:mr-0 '>
                 <h2 className='font-bold font-montserrat text-2xl sm:text-4xl xl:text-5xl mb-4 sm:mb-12 mr-4 sm:mr-0 '><span className='text-[#F47648]'>День 6. </span>Берег Тихого океана, экскурсия по городу</h2>
                 <div className='text-[#ACACAC] font-lato sm:w-4/5 mr-4 sm:mr-0'>
@@ -232,8 +234,9 @@ export default function Fifth() {
                           className="mySwiper !z-50"
                         >
                           {data.map(d=> (
-                            <div className=' relative  z-50' >
+                            
                             <SwiperSlide  >
+                            <div className=' relative  z-50 w-fit' >
                             <img className='w-64 sm:w-72 m:w-80 lg:w-[335px]  xl:w-72 2xl:w-80 h-64 sm:h-72 md:h-80 lg:h-64 xl:h-72 2xl:h-80' src={d.img} />
                             <div className='font-lato text-white text-sm absolute bottom-5 left-5 p-2 z-30'>
                                 <a href="" className='font-bold mb-1'>{d.title}</a>
@@ -241,9 +244,10 @@ export default function Fifth() {
                             </div>
 
                             <img className='absolute w-fit h-fit bottom-0 left-0 ' src="/img/day-black.png" alt="" />
+                            </div>
                           </SwiperSlide>
                             
-                            </div>
+                            
                           ))}
 
                         </Swiper>
